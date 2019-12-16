@@ -1,16 +1,16 @@
-@import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
+@import url("https://fonts.googleapis.com/css?family=Courgette&display=swap");
 
 :root {
-  --mainPink: #ef7998;
+  --mainPink: #ff346a;
   --mainYellow: rgb(249, 228, 148);
   --mainWhite: #fff;
   --mainBlack: #000;
-  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --yellowTrans: rgba(214, 175, 16, 0.5);
   --mainGrey: rgb(238, 238, 238);
 }
 
 body {
-  font-family: "Kaushan Script", cursive;
+  font-family: "Courgette", cursive;
   background: var(--mainWhite);
   color: var(--mainBlack);
 }
@@ -71,6 +71,11 @@ body {
   color: var(--mainWhite);
   margin-top: -4rem;
 }
+
+h1.text-capitalize {
+  font-size: 4rem;
+}
+
 .banner-title {
   color: var(--mainPink);
   font-size: 4rem;
@@ -178,6 +183,7 @@ body {
 .store-img {
   transition: all 1s ease-in-out;
   max-height: 20rem;
+  max-width: 20rem;
 }
 .img-container:hover .store-img {
   transform: scale(1.2);
@@ -260,4 +266,38 @@ body {
   top: 50%;
   right: 0;
   transform: translateX(60%);
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  h1.text-capitalize {
+    font-size: 2.2rem;
+  }
+
+  .banner-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  /* Nav links text-size */
+  .nav-link {
+    font-size: 1.3rem;
+  }
+
+  /* Titles of all part of the page */
+  h1.text-capitalize {
+    font-size: 3rem;
+  }
+
+  .banner-title {
+    font-size: 3rem;
+  }
+
+  /* Products images size */
+  .store-img {
+    height: 20rem;
+    width: 20rem;
+  }
 }
