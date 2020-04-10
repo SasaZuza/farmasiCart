@@ -62,8 +62,10 @@
         );
 
         // Creating template literal for the item added to the cart
+        // <img src="${item.img}" class="img-fluid rounded-circle" id="item-img" alt="">
+        // This is how we can add small image to cart - it goes before ${item.name} line
         cartItem.innerHTML = `
-          <img src="${item.img}" class="img-fluid rounded-circle" id="item-img" alt="">
+          
           <div class="item-text">
 
             <p id="cart-item-title" class="font-weight-bold mb-0">${item.name}</p>
